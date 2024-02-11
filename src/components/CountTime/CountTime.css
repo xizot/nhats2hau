@@ -1,0 +1,159 @@
+.count-time__wrapper {
+    background: url('../../../public/assets/images/bg-counttime.jpg') no-repeat
+        center center/cover;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.count-time__wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.count-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.count-time__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.digit {
+    font-weight: bolder;
+    font-size: 8rem;
+}
+
+.label {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 70px;
+    animation: beat 0.7s infinite;
+    transform-origin: 50% 100%;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: rgb(234, 13, 13);
+    z-index: -1;
+}
+
+.heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.infor {
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.infor__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.infor__item .name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.infor__item .birth {
+    font-weight: bold;
+}
+
+/* Animation */
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .count-time {
+        gap: 2rem;
+    }
+
+    .digit {
+        font-size: 5rem;
+    }
+
+    .label {
+        font-size: 1.4rem;
+    }
+
+    .infor {
+        gap: 4rem;
+    }
+
+    .infor__item .name {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .count-time {
+      gap: 1.5rem;
+  }
+
+  .digit {
+      font-size: 2.6rem;
+  }
+
+  .label {
+      font-size: 1rem;
+  }
+
+  .infor__item .name {
+      font-size: 1.4rem;
+  }
+}
