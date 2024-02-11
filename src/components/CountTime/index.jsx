@@ -25,12 +25,7 @@ function CountTime() {
     <div className="count-time__wrapper">
       <div className='infor'>
         <div className='infor__item heart'>
-          <div className='name'>Nhật</div>
-          <div className='birth'>16-04</div>
-        </div>
-        <div className='infor__item heart'>
-          <div className='name'>Hậu</div>
-          <div className='birth'>21-12</div>
+          <div className='name'>Nhật - Minh Hậu</div>
         </div>
       </div>
       <div className="count-time">

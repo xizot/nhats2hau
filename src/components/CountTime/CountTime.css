@@ -47,8 +47,8 @@
 
 .heart {
     position: relative;
-    width: 100px;
-    height: 70px;
+    width: 240px;
+    height: 140px;
     animation: beat 0.7s infinite;
     transform-origin: 50% 100%;
 }
@@ -58,15 +58,15 @@
     content: '';
     position: absolute;
     top: 0;
-    width: 52px;
-    height: 80px;
-    border-radius: 50px 50px 0 0;
+    width: 120px;
+    height: 170px;
+    border-radius: 120px 120px 0 0;
     background: rgb(234, 13, 13);
     z-index: -1;
 }
 
 .heart::before {
-    left: 50px;
+    left: 120px;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
 }
@@ -82,7 +82,7 @@
     gap: 6rem;
     margin-bottom: 1rem;
     color: #ffffff;
-    margin-bottom: 24px;
+    margin-bottom: 50px;
 }
 
 .infor__item {
@@ -94,7 +94,7 @@
 }
 
 .infor__item .name {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -132,10 +132,6 @@
 
     .infor {
         gap: 4rem;
-    }
-
-    .infor__item .name {
-        font-size: 1.6rem;
     }
 }
 
