@@ -45,7 +45,6 @@ function ImageSwiper() {
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        loop={true}
         slidesPerView={'auto'}
         freeMode={true}
         slideToClickedSlide={true}
