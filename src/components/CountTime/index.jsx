@@ -5,9 +5,9 @@ const padZero = (num) => {
   return (num < 10 ? '0' : '') + num;
 };
 
+const startDate = new Date("2018/09/19");
 function CountTime() {
-
-  const [now, setNow] = useState(new Date() - new Date("2019/09/19"));
+  const [now, setNow] = useState(new Date() - startDate);
 
   const days = Math.floor(now / (1000 * 60 * 60 * 24));
   const hours = Math.floor((now % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -16,7 +16,7 @@ function CountTime() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setNow(new Date() - new Date("2019/09/19"));
+      setNow(new Date() - startDate);
     }, 1000);
     return () => clearInterval(interval);
   }, []);
