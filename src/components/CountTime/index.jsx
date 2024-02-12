@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './CountTime.css';
+import ImageSwiper from '../ImageSwiper';
 
 const padZero = (num) => {
   return (num < 10 ? '0' : '') + num;
@@ -23,11 +24,12 @@ function CountTime() {
 
   return (
     <div className="count-time__wrapper">
-      <div className='infor'>
+      {/* <div className='infor'>
         <div className='infor__item heart'>
           <div className='name'>Nhật - Minh Hậu</div>
         </div>
-      </div>
+      </div> */}
+      <ImageSwiper />
       <div className="count-time">
         <div className="count-time__item days">
           <div className="digit">{padZero(days)}</div>
