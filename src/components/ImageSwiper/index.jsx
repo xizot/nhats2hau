@@ -34,11 +34,15 @@ import Image29 from '../../assets/images/29.jpg';
 import Image30 from '../../assets/images/30.jpg';
 import Image31 from '../../assets/images/31.jpg';
 import Image32 from '../../assets/images/32.jpg';
+import Image33 from '../../assets/images/33.jpg';
+import Image34 from '../../assets/images/34.jpg';
+import Image35 from '../../assets/images/35.jpg';
+import Image36 from '../../assets/images/36.jpg';
 
 function ImageSwiper() {
   const slides = [
-    Image7, Image2, Image3, Image5, Image6, Image8, Image9, Image10, Image11, Image12, Image13, Image4, Image14, Image15, Image17, Image18, Image19, Image20, Image21, Image22, Image23, Image24, Image25, Image26, Image27, Image28, Image29, Image30, Image31, Image32
-  ]
+    Image34, , Image7, Image2, Image36, Image3, Image5, Image6, Image8, Image9, Image10, Image11, Image12, Image13, Image4, Image14, Image15, Image17, Image18, Image19, Image20, Image21, Image22, Image23, Image24, Image25, Image26, Image27, Image28, Image29, Image30, Image31, Image32
+    , Image33, Image35]
   return (
     <div className="image-swiper">
       <Swiper
